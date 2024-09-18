@@ -175,7 +175,7 @@ func (r *RegionInfo) rangeEqualsTo(region *RegionInfo) bool {
 const (
 	// EmptyRegionApproximateSize is the region approximate size of an empty region
 	// (heartbeat size <= 1MB).
-	EmptyRegionApproximateSize = 1
+	EmptyRegionApproximateSize = 0
 	// ImpossibleFlowSize is an impossible flow size (such as written_bytes, read_keys, etc.)
 	// It may be caused by overflow, refer to https://github.com/tikv/pd/issues/3379.
 	// They need to be filtered so as not to affect downstream.
